@@ -1,0 +1,199 @@
+﻿GeneName,TopSymbol,Function,Source
+100_c1,1001L,Anti-host immunity,core_table
+100_c2,1001R,Anti-host immunity,MGF_family_inference
+100_c3,1003L,Anti-host immunity,core_table
+110_c1,1105L6L,Anti-host immunity,MGF_family_inference
+110_c2,1102L,Anti-host immunity,MGF_family_inference
+110_c3,1107L,Anti-host immunity,MGF_family_inference
+110_c4,11014,Anti-host immunity,MGF_family_inference
+110_c5,1101L,Anti-host immunity; Membrane/envelope-associated,core_table
+110_c6,1101B,Anti-host immunity,MGF_family_inference
+110_c7,1109L,Anti-host immunity; Membrane/envelope-associated,MGF_family_inference
+110_c8,11010L,Anti-host immunity,MGF_family_inference
+110_c9,1108L,Anti-host immunity,MGF_family_inference
+148R_c1,148R,Membrane/envelope-associated,core_table
+285L_c1,285L,Unknown,unknown
+300_c1,3001L,Anti-host immunity; Membrane/envelope-associated,core_table
+300_c2,3002R,Anti-host immunity,core_table
+300_c3,3004L,Anti-host immunity,core_table
+360_c1,36010L,Anti-host immunity,MGF_family_inference
+360_c10,36015R,Anti-host immunity,core_table
+360_c11,3605L,Anti-host immunity,MGF_family_inference
+360_c12,3609L,Anti-host immunity,MGF_family_inference
+360_c13,3608L,Anti-host immunity,core_table
+360_c14,3602L,Anti-host immunity,MGF_family_inference
+360_c2,3609L,Anti-host immunity,MGF_family_inference
+360_c3,36016R,Anti-host immunity,MGF_family_inference
+360_c4,3601La,Anti-host immunity,MGF_family_inference
+360_c5,36018R,Anti-host immunity,MGF_family_inference
+360_c6,3604L,Anti-host immunity,MGF_family_inference
+360_c7,36018,Anti-host immunity,MGF_family_inference
+360_c8,36019Rb,Anti-host immunity,MGF_family_inference
+360_c9,36014L,Anti-host immunity,core_table
+505_c1,5051R,Anti-host immunity,core_table
+505_c2,50510,Anti-host immunity,MGF_family_inference
+505_c3,50511L,Anti-host immunity,core_table
+505_c4,5054R,Anti-host immunity,core_table
+505_c5,5057R,Anti-host immunity,MGF_family_inference
+505_c6,5053R,Anti-host immunity,core_table
+86R_c1,86R,Unknown,unknown
+APE_c1,EP296R,Viral replication and assembly,core_table
+ARBH_c1,A179L,Anti-host immunity,core_table
+ASFV_G_ACD_00090_YP009927106.1_c1,ASFV_G_ACD_00090_YP009927106.1_c1,Unknown,unknown
+ASFV_G_ACD_00120_YP009927109.1_c1,ASFV_G_ACD_00120_YP009927109.1_c1,Unknown,unknown
+ASFV_G_ACD_00160_YP009927114.1_c1,ASFV_G_ACD_00160_YP009927114.1_c1,Unknown,unknown
+ASFV_G_ACD_00190_YP009927117.1_c1,ASFV_G_ACD_00190_YP009927117.1_c1,Unknown,unknown
+ASFV_G_ACD_00210_YP009927119.1_c1,ASFV_G_ACD_00210_YP009927119.1_c1,Unknown,unknown
+ASFV_G_ACD_00210_YP009927119.1_c2,ASFV_G_ACD_00210_YP009927119.1_c2,Unknown,unknown
+ASFV_G_ACD_00240_YP009927121.1_c1,ASFV_G_ACD_00240_YP009927121.1_c1,Unknown,unknown
+ASFV_G_ACD_00270_YP009927125.1_c1,ASFV_G_ACD_00270_YP009927125.1_c1,Unknown,unknown
+ASFV_G_ACD_00300_YP009927127.1_c1,ASFV_G_ACD_00300_YP009927127.1_c1,Unknown,unknown
+ASFV_G_ACD_00330_YP009927131.1_c1,ASFV_G_ACD_00330_YP009927131.1_c1,Unknown,unknown
+ASFV_G_ACD_00350_YP009927132.1_c1,ASFV_G_ACD_00350_YP009927132.1_c1,Unknown,unknown
+ASFV_G_ACD_00360_YP009927133.1_c1,ASFV_G_ACD_00360_YP009927133.1_c1,Unknown,unknown
+ASFV_G_ACD_00520_YP009927148.1_c1,ASFV_G_ACD_00520_YP009927148.1_c1,Unknown,core_table
+ASFV_G_ACD_01020_YP009927196.1_c1,ASFV_G_ACD_01020_YP009927196.1_c1,Membrane/envelope-associated,core_table
+ASFV_G_ACD_01870_YP009927276.1_c1,ASFV_G_ACD_01870_YP009927276.1_c1,Unknown,unknown
+ASFV_G_ACD_01940_YP009927283.1_c1,ASFV_G_ACD_01940_YP009927283.1_c1,Unknown,unknown
+ASFV_G_ACD_01960_YP009927286.1_c1,ASFV_G_ACD_01960_YP009927286.1_c1,Unknown,unknown
+ASFV_G_ACD_01980_YP009927288.1_c1,ASFV_G_ACD_01980_YP009927288.1_c1,Unknown,unknown
+ASFV_G_ACD_01990_YP009927097.1_c1,ASFV_G_ACD_01990_YP009927097.1_c1,Unknown,unknown
+C76L_c1,C84L,Unknown,core_table
+CAPSH_c1,B646L,Viral replication and assembly,core_table
+CAPSP_c1,H240R,Anti-host immunity; Viral replication and assembly,core_table
+CD2H_c1,EP402R,Anti-host immunity; Viral replication and assembly; Membrane/envelope-associated,core_table
+DIPP_c1,D205R,Viral replication and assembly,core_table
+DNLI_c1,NP419L,Viral replication and assembly,core_table
+DP60R_c1,DP60R,Membrane/envelope-associated,symbol_to_185
+DP71L_c1,DP71L,Anti-host immunity,symbol_to_185
+DPOLX_c1,O174L,Viral replication and assembly,core_table
+DPOL_c1,G1211R,Viral replication and assembly,core_table
+DUTP_c1,E165R,Viral replication and assembly,core_table
+E248R_c1,E248R,Anti-host immunity; Viral replication and assembly; Membrane/envelope-associated,core_table
+EP153_c1,EP153R,Anti-host immunity; Membrane/envelope-associated,core_table
+ETFL_c1,G1340L,Viral replication and assembly,core_table
+ETFS_c1,D1133L,Viral replication and assembly,core_table
+EV169_c1,I10L,Anti-host immunity; Viral replication and assembly; Membrane/envelope-associated,symbol_to_185
+EV169_c2,I10L,Anti-host immunity; Viral replication and assembly; Membrane/envelope-associated,symbol_to_185
+FLSO_c1,B119L,Viral replication and assembly,core_table
+H962L_c1,B962L,Viral replication and assembly,core_table
+H962R_c1,C962R,Viral replication and assembly,core_table
+I329L_c1,I329L,Anti-host immunity; Membrane/envelope-associated,core_table
+I78_c1,I78,Unknown,core_table
+I8L_c1,I7L,Membrane/envelope-associated,symbol_to_185
+I9R_c1,I9R,Unknown,core_table
+IAP_c1,A224L,Anti-host immunity,core_table
+IKBL_c1,A238L,Anti-host immunity,core_table
+IM014gp072_c1,IM014gp072,Unknown,unknown
+IM014gp185_c1,IM014gp185,Unknown,unknown
+KITH_c1,K196R,Viral replication and assembly,core_table
+KP86R_c1,KP86R,Unknown,unknown
+KTHY_c1,A240L,Viral replication and assembly,core_table
+L11L_c1,L11L,Membrane/envelope-associated,symbol_to_185
+L60L_c1,L60L,Unknown,core_table
+L83L_c1,L83L,Anti-host immunity,core_table
+M1249_c1,M1249L,Anti-host immunity; Viral replication and assembly,core_table
+MCE_c1,NP868R,Viral replication and assembly,core_table
+NIFSL_c1,QP383R,Anti-host immunity; Viral replication and assembly,core_table
+P10_c1,K78R,Viral replication and assembly,core_table
+P12_c1,O61R,Viral replication and assembly; Membrane/envelope-associated,core_table
+P14_c1,E120R,Anti-host immunity; Viral replication and assembly,core_table
+P17_c1,D117L,Anti-host immunity; Viral replication and assembly; Membrane/envelope-associated,core_table
+P22_c1,KP177R,Anti-host immunity; Membrane/envelope-associated,core_table
+P30_c1,CP204L,Anti-host immunity; Viral replication and assembly,core_table
+P49_c1,B438L,Viral replication and assembly,core_table
+P54_c1,E183L,Viral replication and assembly; Membrane/envelope-associated,core_table
+PAP1_c1,C475L,Viral replication and assembly,core_table
+PK1_c1,R298L,Viral replication and assembly,core_table
+PNG1_c1,PNG1,Unknown,unknown
+PNG1_c2,PNG1,Unknown,unknown
+PNG2_c1,ASFV,Unknown,unknown
+PNG3_c1,ASFV,Membrane/envelope-associated,unknown
+PNG3_c2,PNG3,Membrane/envelope-associated,unknown
+PNG5_c1,PNG5,Unknown,unknown
+PNG7_c1,PNG7,Unknown,unknown
+PNG7_c2,PNG7,Unknown,unknown
+PP220_c1,CP2475L,Viral replication and assembly; Membrane/envelope-associated,core_table
+PP62_c1,CP530R,Viral replication and assembly,core_table
+PRIM_c1,F1055L,Viral replication and assembly,core_table
+RIR1_c1,F778R,Anti-host immunity; Viral replication and assembly,core_table
+RIR2_c1,F334L,Viral replication and assembly,core_table
+RLIG_c1,M448R,Anti-host immunity; Viral replication and assembly,core_table
+RPB10_c1,CP80R,Viral replication and assembly,core_table
+RPB1_c1,NP1450L,Viral replication and assembly,core_table
+RPB2_c1,EP1242L,Viral replication and assembly,core_table
+RPB3_c1,H359L,Anti-host immunity; Viral replication and assembly,core_table
+RPB5_c1,D205R,Viral replication and assembly,core_table
+RPB6_c1,C147L,Viral replication and assembly,core_table
+RPB7_c1,D339L,Viral replication and assembly,core_table
+RPB9_c1,C122R,Viral replication and assembly,core_table
+TBP_c1,B263R,Viral replication and assembly,core_table
+TFIIB_c1,C315R,Anti-host immunity,core_table
+TFIIS_c1,I243L,Viral replication and assembly,core_table
+TFNPH_c1,Q706L,Viral replication and assembly,core_table
+TOP2_c1,P1192R,Viral replication and assembly,core_table
+TPRT_c1,B318L,Anti-host immunity; Viral replication and assembly; Membrane/envelope-associated,core_table
+UBC_c1,I215L,Anti-host immunity; Viral replication and assembly,core_table
+VF108_c1,H108R,Viral replication and assembly; Membrane/envelope-associated,core_table
+VF111_c1,E111R,Unknown,core_table
+VF117_c1,B117L,Viral replication and assembly; Membrane/envelope-associated,core_table
+VF118_c1,A118R,Membrane/envelope-associated,symbol_to_185
+VF118_c2,A118R,Membrane/envelope-associated,symbol_to_185
+VF123_c1,CP123L,Viral replication and assembly; Membrane/envelope-associated,core_table
+VF124_c1,H124R,Viral replication and assembly,core_table
+VF125_c1,B125R,Anti-host immunity,core_table
+VF129_c1,C129R,Anti-host immunity; Viral replication and assembly,core_table
+VF137_c1,A137R,Anti-host immunity; Viral replication and assembly,core_table
+VF145_c1,K145R,Viral replication and assembly,core_table
+VF146_c1,E146L,Viral replication and assembly; Membrane/envelope-associated,core_table
+VF151_c1,A151R,Anti-host immunity; Viral replication and assembly,core_table
+VF152_c1,EP152R,Anti-host immunity; Membrane/envelope-associated,core_table
+VF165_c1,F165R,Membrane/envelope-associated,core_table
+VF169_c1,B169L,Viral replication and assembly; Membrane/envelope-associated,core_table
+VF171_c1,H171R,Viral replication and assembly,core_table
+VF175_c1,B175L,Anti-host immunity,core_table
+VF177_c1,VF177,Anti-host immunity; Viral replication and assembly,unknown
+VF177_c2,I177L,Anti-host immunity; Viral replication and assembly,core_table
+VF183_c1,S183L,Anti-host immunity,core_table
+VF184_c1,E184L,Anti-host immunity; Viral replication and assembly,core_table
+VF196_c1,I196L,Unknown,core_table
+VF199_c1,E199L,Anti-host immunity; Viral replication and assembly; Membrane/envelope-associated,core_table
+VF205_c1,K205R,Anti-host immunity,core_table
+VF226_c1,I226R,Anti-host immunity,core_table
+VF233_c1,H233R,Unknown,core_table
+VF257_c1,C257L,Viral replication and assembly; Membrane/envelope-associated,core_table
+VF267_c1,I267L,Anti-host immunity,core_table
+VF301_c1,E301R,Anti-host immunity; Viral replication and assembly,core_table
+VF312_c1,CP312R,Anti-host immunity; Viral replication and assembly,core_table
+VF317_c1,F317L,Anti-host immunity; Viral replication and assembly,core_table
+VF345_c1,D345L,Anti-host immunity,core_table
+VF354_c1,B354L,Unknown,core_table
+VF364_c1,EP364R,Anti-host immunity,core_table
+VF385_c1,B385R,Unknown,core_table
+VF407_c1,B407L,Unknown,core_table
+VF421_c1,K421R,Viral replication and assembly,core_table
+VF423_c1,E423R,Viral replication and assembly,core_table
+VF424_c1,EP424R,Viral replication and assembly,core_table
+VF475_c1,B475L,Anti-host immunity,core_table
+VF509_c1,QP509L,Viral replication and assembly,core_table
+VF602_c1,B602L,Viral replication and assembly,core_table
+VF62_c1,C62L,Unknown,core_table
+VF69R_c1,VF69R,Membrane/envelope-associated,unknown
+VF69R_c2,X69R,Membrane/envelope-associated,core_table
+VF717_c1,C717R,Viral replication and assembly,core_table
+VF73R_c1,I73R,Anti-host immunity; Viral replication and assembly,core_table
+VF79_c1,DP79L,Unknown,core_table
+VF84L_c1,C84L,Unknown,core_table
+VF84_c1,EP84R,Viral replication and assembly; Membrane/envelope-associated,core_table
+VF859_c1,A859L,Viral replication and assembly,core_table
+VF93L_c1,VF93L,Unknown,unknown
+VF93L_c2,VF93L,Unknown,unknown
+VF93L_c3,VF93L,Unknown,unknown
+VF96_c1,DP96R,Anti-host immunity,symbol_to_185
+VFB66_c1,B66L,Anti-host immunity; Membrane/envelope-associated,core_table
+VFD29_c1,D129L,Anti-host immunity,core_table
+VFD38_c1,DP238L,Unknown,core_table
+VFE66_c1,E66L,Anti-host immunity,symbol_to_185
+VFH33_c1,H339R,Viral replication and assembly,core_table
+VHLP_c1,A104R,Viral replication and assembly,core_table
+VPRT_c1,S273R,Anti-host immunity; Viral replication and assembly,core_table
