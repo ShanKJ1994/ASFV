@@ -619,45 +619,58 @@ print(final_plot)
 #gene在多少个重组区间
 
 ####################################################################
-write.table(df_plot,"C:/Users/Ke-jia Shan/Desktop/博后/博后课题/ASFV/recombination/0RDP/ASFV_RE_gene.tsv",row.names = F,quote = F,sep="\t")
-RE <- fread("C:/Users/Ke-jia Shan/Desktop/博后/博后课题/ASFV/recombination/0RDP/ASFV_RE_gene.tsv",sep="\t")
+
+RE <- fread("C:/Users/Ke-jia Shan/Desktop/博后/博后课题/ASFV/recombination/0RDP/ASFV_all_RDP/SCG/recombination_event_genes_freq.txt",sep="\t")
 
 library(data.table)
 library(ggplot2)
 
 # 按重组事件数降序排序
-RE_order <- RE[order(recomb_hit,decreasing = T)]
+RE_order <- RE[order(Recombination_events,decreasing = T)]
 RE_order$Group <- sub("_YP.*", "", RE_order$Group)
+RE_order$Group <- RE_order$Gene
 
-RE_order$Gene<-paste0(RE_order$Group,":",RE_order$Start,"-",RE_order$End)
+Gene_Function=fread("C:/Users/Ke-jia Shan/Desktop/博后/博后课题/ASFV/recombination/0RDP/ASFV_all_RDP/SCG/gene_function.csv")
+plot=merge(filter(RE_order,Recombination_events>=3),Gene_Function,by.x = "Group",by.y = "GeneName")
 
-# # 绘图
-# ggplot(filter(RE_order,recomb_hit>=5), aes(x = factor(Gene, levels = Gene), y = recomb_hit)) +
-#   geom_col(fill = "#4088B4", width = 0.7) +
-#   labs(
-#     y = "Number of recombination events",
-#     x = "Gene",
-#     title = "Recombination events count per gene (descending order)"
-#   ) +
-#   theme_bw() +
-#   theme(
-#     plot.title = element_text(hjust = 0.5),
-#     # X轴标签竖直90度摆放
-#     axis.text.x = element_text(angle = 90, vjust = 0.5, hjust = 1, size = 6.5),
-#     # 清理多余网格线
-#     panel.grid.major.x = element_blank(),
-#     panel.grid.minor = element_blank()
-#   )
-# 
-# 
-# unique(RE_order$Group )
+Gene_Function$GeneName=gsub("_c\\d+","",Gene_Function$GeneName)
+mid=table(Gene_Function$GeneName)[table(Gene_Function$GeneName)>1]
+names(mid)
+plot$Gene=gsub("_c\\d+","",plot$Gene)
+plot=data.table(plot)
+plot[!Gene %in% names(mid)]$Group=plot[!Gene %in% names(mid)]$Gene
+
+plot[Group == "100_c1"]$Group="100_1L2L"
+plot[Group == "100_c2"]$Group="100_1R"
+plot[Group == "100_c3"]$Group="100_3L"
+plot[Group == "110_c9"]$Group="110_8L"
+plot[Group == "110_c5"]$Group="110_1L"
+plot[Group == "300_c1"]$Group="300_1L"
+plot[Group == "300_c2"]$Group="300_2R"
+plot[Group == "300_c3"]$Group="300_3L4L"
+plot[Group == "360_c8"]$Group="360_19Rb"
+plot[Group == "360_c9"]$Group="360_14L"
+plot[Group == "360_c10"]$Group="360_15R"
+plot[Group == "360_c3"]$Group="360_16R"
+plot[Group == "360_c5"]$Group="360_18R"
+plot[Group == "505_c1"]$Group="505_1R"
+plot[Group == "505_c6"]$Group="505_3R"
+plot[Group == "505_c4"]$Group="505_4R"
+plot[Group == "505_c3"]$Group="505_11L"
+plot[Group == "505_c5"]$Group="505_6R7R8R"
+plot[Group == "505_c2"]$Group="505_2R5R9R10R"
+plot <- plot[order(Recombination_events,decreasing = T)]
+plot[grepl("^100",plot$Group),]$Group <- gsub("100","MGF-100",plot[grepl("^100",plot$Group),]$Group )
+plot[grepl("^110",plot$Group),]$Group <- gsub("110","MGF-110",plot[grepl("^110",plot$Group),]$Group )
+plot[grepl("^300",plot$Group),]$Group <- gsub("300","MGF-300",plot[grepl("^300",plot$Group),]$Group )
+plot[grepl("^360",plot$Group),]$Group <- gsub("360","MGF-360",plot[grepl("^360",plot$Group),]$Group )
+plot[grepl("^505",plot$Group),]$Group <- gsub("505","MGF-505",plot[grepl("^505",plot$Group),]$Group )
+plot$Group <- sub("_YP.*", "", plot$Group)
 
 
-Gene_Function=fread("C:/Users/Ke-jia Shan/Desktop/博后/博后课题/ASFV/recombination/0RDP/ASFV_gene_categories.tsv")
-plot=merge(filter(RE_order,recomb_hit>=5)[,c(8,10,15,22)],Gene_Function[,c(1,11)],by.x = "Group",by.y = "query")
-plot <- plot[order(recomb_hit,decreasing = T)]
 
-ggplot(plot, aes(x = factor(Gene, levels = Gene), y = recomb_hit,fill = category)) +
+ggplot(plot, aes(x = factor(Group, levels = Group),
+                 y = Recombination_events, fill = Function)) +
   geom_col(width = 0.7) +
   labs(
     y = "Number of recombination events",
@@ -666,12 +679,22 @@ ggplot(plot, aes(x = factor(Gene, levels = Gene), y = recomb_hit,fill = category
   theme_classic() +
   theme(
     plot.title = element_text(hjust = 0.5),
-    # X轴标签竖直90度摆放
     axis.text.x = element_text(angle = 90, vjust = 0.5, hjust = 1, size = 6.5),
-    # 清理多余网格线
     panel.grid.major.x = element_blank(),
     panel.grid.minor = element_blank(),
     legend.position  = "top"
+  ) +
+  scale_fill_manual(
+    values = c(
+      "Viral replication and assembly" = "#58A8F6",
+      "Membrane/envelope-associated"   = "#219180",
+      "Anti-host immunity"             = "#E53C38",
+      "Unknown function"               = "#A9A9A9",
+      "Anti-host immunity; Viral replication and assembly" = "#F9A74D",
+      "Viral replication and assembly; Membrane/envelope-associated" = "#66C755",
+      "Anti-host immunity; Membrane/envelope-associated" = "#B545A2",
+      "Anti-host immunity; Viral replication and assembly; Membrane/envelope-associated" = "#2B644A"
+    )
   )
 dev.off()
 ggsave("FigE.pdf", width = 13, height = 5, dpi = 300)
